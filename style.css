@@ -1,0 +1,93 @@
+:root {
+  --highlight: #524b38;
+  --bg1: #393939;
+  --bg2: #2d2d2d;
+  --dark: #1b1b1b;
+  --light: #a3abb3;
+  --link: #3af;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: var(--bg2);
+  color: white;
+  text-align: center;
+}
+
+a {
+  color: var(--light);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--link);
+}
+
+#main-header {
+  background-color: var(--bg1);
+}
+
+#main-header nav {
+  background-color: var(--highlight);
+}
+
+#main-header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+#main-header nav ul li a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#main-title {
+  margin: 0;
+  padding: 1rem;
+}
+
+#descripcion {
+  margin: 2rem 0;
+}
+
+#personas-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+
+  justify-content: center;
+  gap: 4rem;
+}
+
+.personas-item {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+
+  width: 200px;
+
+  background-color: var(--dark);
+  padding: 1rem;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.personas-item .item-desc p,
+.personas-item .item-desc h3 {
+  margin: 0;
+}
+
+.personas-item:hover {
+  transform: scale(1.05);
+}
+
+.personas-item img {
+  width: 100%;
+  height: auto;
+}
